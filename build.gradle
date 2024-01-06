@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'dev.omel'
+version '0.0.1'
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+repositories {
+    mavenCentral()
+    mavenLocal()
+    maven { url 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
+}
+dependencies {
+    compileOnly 'org.spigotmc:spigot:1.20-R0.1-SNAPSHOT'
+}
