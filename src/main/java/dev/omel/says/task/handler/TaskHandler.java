@@ -22,8 +22,9 @@ public final class TaskHandler {
     private TaskHandler() {
         ChallengeTask killMob = new KillMob(10);
 
-        killMob.setConsumer((b) -> {
+        killMob.setConsumer((b, p) -> {
             System.out.println("KillMob: " + b);
+            System.out.println("KillMob: " + p.getName());
         });
 
 
