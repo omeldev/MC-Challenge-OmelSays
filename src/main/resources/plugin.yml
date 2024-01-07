@@ -1,6 +1,10 @@
-author: Omel
-main: dev.omel.template.Main
+author: [Omel, FCQCarryOut]
+main: dev.omel.says.main.Main
 version: 0.0.1
-name: TemplatePlugin
+name: OmelSays
 api-version: '1.20'
 commands:
+  gettask:
+    description: Get a task
+    usage: /gettask
+    aliases: [gt]
