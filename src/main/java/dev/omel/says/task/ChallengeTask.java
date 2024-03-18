@@ -11,12 +11,11 @@ import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 import java.util.function.Function;
 
+@Getter
 public abstract class ChallengeTask {
 
-    @Getter
-    private int timeInSeconds;
+    private final int timeInSeconds;
     @Setter
-    @Getter
     protected BiConsumer<Boolean, Player> consumer;
 
     public ChallengeTask(int timeInSeconds) {
